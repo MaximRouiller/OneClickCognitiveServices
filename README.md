@@ -1,1 +1,1 @@
-# OneClickCognitiveServices
+# One-Click Cognitive Services
