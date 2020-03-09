@@ -2,27 +2,18 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "cvName": {
+        "customVisionName": {
             "defaultValue": "cv",
-            "type": "String",
-            "metadata": {
-                "description": "Custom Vision Name Base Name"
-            }
+            "type": "String"
         },
-        "cvPredictionName": {
+        "customVisionPredictionName": {
             "defaultValue": "cvp",
-            "type": "String",
-            "metadata": {
-                "description": "Custom Vision Prediction Name Base Name"
-            }
+            "type": "String"
         },
         "location": {
             "defaultValue": "eastus",
             "allowedValues": ["eastus", "westus"],
-            "type": "string",
-            "metadata": {
-                "description": "Locations"
-            }
+            "type": "string"
         }
     },
     "variables": {},
@@ -30,27 +21,27 @@
         {
             "type": "Microsoft.CognitiveServices/accounts",
             "apiVersion": "2017-04-18",
-            "name": "[concat(parameters('cvName'), uniqueString(resourceGroup().id))]",
+            "name": "[concat(parameters('customVisionName'), uniqueString(resourceGroup().id))]",
             "location": "[parameters('location')]",
             "sku": {
                 "name": "F0"
             },
             "kind": "CustomVision.Training",
             "properties": {
-                "customSubDomainName": "[concat(parameters('cvName'), uniqueString(resourceGroup().id))]"
+                "customSubDomainName": "[concat(parameters('customVisionName'), uniqueString(resourceGroup().id))]"
             }
         },
         {
             "type": "Microsoft.CognitiveServices/accounts",
             "apiVersion": "2017-04-18",
-            "name": "[concat(parameters('cvPredictionName'), uniqueString(resourceGroup().id))]",
+            "name": "[concat(parameters('customVisionPredictionName'), uniqueString(resourceGroup().id))]",
             "location": "[parameters('location')]",
             "sku": {
                 "name": "F0"
             },
             "kind": "CustomVision.Prediction",
             "properties": {
-                "customSubDomainName": "[concat(parameters('cvPredictionName'), uniqueString(resourceGroup().id))]"
+                "customSubDomainName": "[concat(parameters('customVisionPredictionName'), uniqueString(resourceGroup().id))]"
             }
         }
     ]
