@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "cvName": {
+            "defaultValue": "cv",
+            "type": "String"
+        },
+        "cvPredictionName": {
+            "defaultValue": "cvp",
+            "type": "String"
+        },
+        "location": {
+            "defaultValue": "eastus",
+            "allowedValues": ["eastus", "westus"],
+            "type": "string"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.CognitiveServices/accounts",
+            "apiVersion": "2017-04-18",
+            "name": "[concat(parameters('cvName'), uniqueString(resourceGroup().id))]",
+            "location": "[parameters('location')]",
+            "sku": {
+                "name": "F0"
+            },
+            "kind": "CustomVision.Training",
+            "properties": {
+                "customSubDomainName": "[concat(parameters('cvName'), uniqueString(resourceGroup().id))]"
+            }
+        },
+        {
+            "type": "Microsoft.CognitiveServices/accounts",
+            "apiVersion": "2017-04-18",
+            "name": "[concat(parameters('cvPredictionName'), uniqueString(resourceGroup().id))]",
+            "location": "[parameters('location')]",
+            "sku": {
+                "name": "F0"
+            },
+            "kind": "CustomVision.Prediction",
+            "properties": {
+                "customSubDomainName": "[concat(parameters('cvPredictionName'), uniqueString(resourceGroup().id))]"
+            }
+        }
+    ]
+}
