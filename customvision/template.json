@@ -4,16 +4,25 @@
     "parameters": {
         "cvName": {
             "defaultValue": "cv",
-            "type": "String"
+            "type": "String",
+            "metadata": {
+                "description": "Custom Vision Name Base Name"
+            }
         },
         "cvPredictionName": {
             "defaultValue": "cvp",
-            "type": "String"
+            "type": "String",
+            "metadata": {
+                "description": "Custom Vision Prediction Name Base Name"
+            }
         },
         "location": {
             "defaultValue": "eastus",
             "allowedValues": ["eastus", "westus"],
-            "type": "string"
+            "type": "string",
+            "metadata": {
+                "description": "Locations"
+            }
         }
     },
     "variables": {},
