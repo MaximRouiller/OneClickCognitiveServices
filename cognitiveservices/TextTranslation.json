@@ -1,0 +1,38 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "baseName": {
+            "type": "string",
+            "defaultValue": "texttranslation"
+        },
+        "location": {
+            "type": "string",
+            "defaultValue": "eastus",
+            "allowedValues": ["eastus", "westus"]
+        },
+        "apiType": {
+            "type": "string",
+            "allowedValues":["TextTranslation"]
+        },
+        "sku": {
+            "type": "string",
+            "defaultValue": "F0"
+        }
+    },
+    "resources": [
+        {
+            "apiVersion": "2017-04-18",
+            "name": "[concat(parameters('baseName'), uniqueString(resourceGroup().id))]",
+            "location": "[parameters('location')]",
+            "type": "Microsoft.CognitiveServices/accounts",
+            "kind": "[parameters('apiType')]",
+            "sku": {
+                "name": "[parameters('sku')]"
+            },
+            "properties": {
+                "customSubDomainName": "[concat(parameters('baseName'), uniqueString(resourceGroup().id))]"
+            }
+        }
+    ]
+}
