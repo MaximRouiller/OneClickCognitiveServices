@@ -16,28 +16,28 @@ This button will create a free Custom Vision service with Prediction and Trainin
 
 This button will create a free Text Analytics Cognitive Services endpoint within the EastUS/WestUS region.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2FMaximRouiller%2FOneClickCognitiveServices%2Fmaster%2Fcognitiveservices%2FTextAnalytics.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMaximRouiller%2FOneClickCognitiveServices%2Fmaster%2Fcognitiveservices%2FTextAnalytics.json)
 
 ## Computer Vision
 
 This button will create a free Computer Vision Cognitive Services endpoint within the EastUS/WestUS region.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2FMaximRouiller%2FOneClickCognitiveServices%2Fmaster%2Fcognitiveservices%2FComputerVision.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMaximRouiller%2FOneClickCognitiveServices%2Fmaster%2Fcognitiveservices%2FComputerVision.json)
 
 ## Face
 
 This button will create a free Face Cognitive Services endpoint within the EastUS/WestUS region.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2FMaximRouiller%2FOneClickCognitiveServices%2Fmaster%2Fcognitiveservices%2FFace.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMaximRouiller%2FOneClickCognitiveServices%2Fmaster%2Fcognitiveservices%2FFace.json)
 
 ## TextAnalytics
 
 This button will create a free Text Analytics Cognitive Services endpoint within the EastUS/WestUS region.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2FMaximRouiller%2FOneClickCognitiveServices%2Fmaster%2Fcustomvision%2FTextAnalytics.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMaximRouiller%2FOneClickCognitiveServices%2Fmaster%2Fcustomvision%2FTextAnalytics.json)
 
 ## TextTranslation
 
 This button will create a free Text Translation Cognitive Services endpoint within the EastUS/WestUS region.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2FMaximRouiller%2FOneClickCognitiveServices%2Fmaster%2Fcustomvision%2FTextTranslation.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMaximRouiller%2FOneClickCognitiveServices%2Fmaster%2Fcustomvision%2FTextTranslation.json)
