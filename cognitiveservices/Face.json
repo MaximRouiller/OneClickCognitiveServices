@@ -13,6 +13,7 @@
         },
         "apiType": {
             "type": "string",
+            "defaultValue": "Face",
             "allowedValues":["Face"]
         },
         "sku": {
