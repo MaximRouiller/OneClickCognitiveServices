@@ -8,8 +8,8 @@
         },
         "location": {
             "type": "string",
-            "defaultValue": "eastus",
-            "allowedValues": ["eastus", "westus"]
+            "defaultValue": "global",
+            "allowedValues": ["global"]
         },
         "apiType": {
             "type": "string",
